@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+header {
+    position: fixed;
+    display: flex;
+    z-index: 999999;
+    width: 100vw;
+    height: fit-content;
+    /* background-color: rgb(39, 231, 119); */
+    background-color: #ffffff;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+}
+
+.logo img {
+    width: clamp(2px, 10vw, 85px);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    font-family: 'Rethink Sans';
+    font-size: clamp(2px, 2vw, 16px);
+    list-style: none;
+    gap: clamp(2px, 1vw, 25px);
+}
+
+.navbaritems a {
+    border: 2px solid #b2cce600;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+.navbaritems a {
+    text-decoration: none;
+}
+
+.navbaritems a:link {
+    color: #90adc8;
+    background-color: #efefef;
+}
+
+.navbaritems a:visited {
+    color: #90adc8;
+}
+
+.navbaritems a:hover {
+    color: #ffffff;
+    background-color: #B2CCE6;
+}
+
+.boxtagline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homehero {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 6%;
+    background-image: url(images/coffeehands5.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homehero h1 {
+    padding: 7% 15% 0% 15%;
+    font-family: 'Funnel Display';
+    text-align: center;
+    font-size: clamp(2px, 8vw, 64px);
+    color: #90adc8;
+}
+
+.explorebutton {
+    padding: 2.5% 0% 2.5% 0%;
+}
+
+.explorebutton a {
+    border: 3px solid #a0714d00;
+    padding: 4px 15px 4px 15px;
+    border-radius: 20px;
+    font-family: 'Rethink Sans';
+    text-decoration: none;
+    font-size: clamp(2px, 3vw, 24px);
+}
+
+.explorebutton a:link {
+    color: #ffffff;
+    background-color: #A0714D;
+}
+
+.explorebutton a:visited {
+    color: #ffffff;
+}
+
+.explorebutton a:hover {
+    color: #90adc8;
+    background-color: #ffffff;
+}
+
+.homehero img {
+    filter: blur(1px);
+    margin-top: -15px;
+    width: 100%;
+    z-index: -1;
+}
+
+.homehero p {
+    font-family: 'Rethink Sans';
+    font-size: clamp(2px, 4vw, 18px);
+    padding: 1rem 30% 13% 30%;
+    color: #ffffff;
+}
+
+.homebox2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+
+.boxusp h1 {
+    font-family: 'Funnel Display';
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-size: clamp(2px, 3vw, 64px);
+    padding: 5% 10% 2% 10%;
+    color: #90adc8;
+}
+
+.uniquebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+}
+
+
+.boxusp2 {
+
+    background-color: rgba(134, 109, 72, 0);
+    padding: 0px 17% 30px 17%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3%;
+}
+
+.boxuspitem {
+    min-width: 36%;
+    max-width: 36%;
+    background-color: #a0714ddb;
+    padding: 3px;
+    border-radius: 10px;
+    border: 3px solid #90adc800;
+}
+
+.boxuspitem img {
+    border: 3px solid #a0714d00;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.boxuspitem p {
+    font-family: 'Rethink Sans';
+    font-size: clamp(2px, 3vw, 18px);
+    padding: 10px;
+    color: #ffffff;
+}
+
+.homebox3 {
+    background-image: url(images/coffeelatte3.jpg);
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homebox3 h1 {
+    padding: 8% 17% 0% 17%;
+    font-family: 'Funnel Display';
+    text-align: center;
+    font-size: clamp(2px, 8vw, 64px);
+    color: #5E361C;
+    text-shadow: 3px 3px 8px #1c11092b;
+}
+
+.downloadcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.downloadbutton {
+    padding: 3.3% 0% 10% 0%;
+}
+
+.downloadbutton a {
+    border: 3px solid #5E361C;
+    padding: 4px 15px 4px 15px;
+    border-radius: 20px;
+    font-family: 'Rethink Sans';
+    text-decoration: none;
+    font-size: clamp(2px, 4vw, 21px);
+    color: #5E361C;
+}
+
+.downloadbutton a:link {
+    color: #ffffff;
+    background-color: #5E361C;
+}
+
+.downloadbutton a:visited {
+    color: #ffffff;
+    background-color: #5E361C;
+}
+
+.downloadbutton a:hover {
+    color: #90adc8;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+
+}
+
+.homebox3 img {
+    filter: blur(1px);
+    margin-top: -15px;
+    width: 100%;
+    z-index: -1;
+}
+
+.homebox3 p {
+    font-family: 'Rethink Sans';
+    font-size: clamp(2px, 3vw, 18px);
+    padding: 2% 25% 0% 25%;
+}
+
+/* this is the footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 30px 18% 30px 18%;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.footerlogo img {
+    width: 100px;
+}
+
+.navfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navbarfooter {
+    padding: 10px 15px 4px 15px;
+    border-radius: 20px;
+}
+
+.navbarfooter a {
+    text-decoration: none;
+    font-size: 0.96;
+}
+
+.navbarfooter a:link {
+    color: #B2CCE6;
+}
+
+.navbarfooter a:visited {
+    color: #B2CCE6;
+}
+
+.navbarfooter a:hover {
+    color: #A0714D;
+}
+
+.copyrighttext {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Rethink Sans';
+    font-size: 0.8rem;
+    padding-top: 3%;
+    padding-left: 15px;
+}
+
+.copyrighttext p {
+    font-weight: bold;
+    color: #D7AC7C;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rethink Sans';
+    margin-left: 5%;
+    font-size: 1rem;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Rethink Sans';
+}
+
+.box3 p {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3.5%;
+    color: #A0714D;
+    font-weight: bold;
+}
+
+.downloads {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.downloads img {
+    width: 120px;
+}
+
+
+/* about page */
+
+
+
+.abouthero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/coffeeshop3-1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouthero h1 {
+    padding: 0px 23% 0px 23%;
+    font-family: 'Funnel Display';
+    text-align: center;
+    font-size: clamp(2px, 8vw, 64px);
+    color: #a1c0df;
+    margin-top: 6%;
+    text-shadow: 3px 2px 5px #726c66;
+}
+
+
+.downarrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.downarrow p {
+    font-size: 3.5rem;
+    color: #D7AC7C;
+}
+
+.aboutbody p {
+    font-family: 'Rethink Sans';
+    padding: 10px 20% 0px 20%;
+    margin-bottom: 8%;
+    font-size: clamp(2px, 3vw, 24px);
+    color: #A0714D;
+}
+
+/* product page */
+
+.boxproductmain {
+    background-image: url('./images/coffeebeanshero3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-color: #ffffffcf;
+    padding: 15px 10% 15px 10%;
+    justify-content: center;
+}
+
+.boxproducttext1 {
+    font-family: 'Funnel Display';
+    padding: 5% 22% 0% 22%;
+    margin-top: 10vh;
+}
+
+.boxproducttext1 h1 {
+    margin-top: 0%;
+    font-size: clamp(2px, 8vw, 64px);
+    display: flex;
+    justify-content: center;
+    color: #97c3ec;
+    margin-bottom: 3%;
+}
+
+.boxproducttext1 p {
+    font-size: clamp(2px, 2vw, 22px);
+    font-weight: bold;
+    color: #a2d2ff;
+}
+
+.productcontainer {
+    display: flex;
+    padding: 50px 10% 0% 10%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productcontainer h1 {
+    font-family: 'Funnel Display';
+    font-size: clamp(2px, 8vw, 20px);
+    display: flex;
+    justify-content: center;
+}
+
+.productcontaineritem {
+    width: 36%;
+    background-color: #a0714da1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #90adc800;
+}
+
+.productcontaineritem img {
+    border: 3px solid #a0714d00;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.productcontaineritem h1{
+    font-size: clamp(2px, 4vw, 24px);
+    font-weight: bold;
+    margin-bottom: 3%;
+    color: #5E361C;
+}
+
+.productcontaineritem p {
+    font-family: 'Rethink Sans';
+    font-size: clamp(2px, 2.5vw, 16px);
+    padding: 10px;
+    color: #ffffff;
+}
+
+.productdownloadbutton {
+    padding: 2% 0% 13% 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.productdownloadbutton a {
+    border: 3px solid #5E361C;
+    padding: 4px 15px 4px 15px;
+    border-radius: 20px;
+    font-family: 'Rethink Sans';
+    text-decoration: none;
+    font-size: clamp(2px, 3vw, 24px);
+    color: #5E361C;
+}
+
+.productdownloadbutton a:link {
+    color: #ffffff;
+    background-color: #5E361C;
+}
+
+.productdownloadbutton a:visited {
+    color: #ffffff;
+    background-color: #5E361C;
+}
+
+.productdownloadbutton a:hover {
+    color: #ffffff;
+    background-color: #90adc8;
+    border: 3px solid #90adc8;
+
+}
+
+/* responsive section */
+/* responsive home page */
+/* add responsive for mobile if necessary */
+
+@media only screen and (max-width:920px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .boxtagline {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .boxusp {
+        text-align: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box1 img {
+        max-width: 90%;
+    }
+
+    .boxproductmain {
+        padding: 15px 3% 15px 3%;
+    }
+
+    .boxproducttext1 {
+        flex-wrap: wrap;
+        margin-top: 16vh;
+    }
+
+    .productcontainer {
+        flex-direction: column;
+        padding: 50px 8% 5% 8%;
+        align-items: center;
+    }
+
+    .productcontaineritem {
+        width: 66%;
+    }
+
+    .boxusp2 {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        width: 100%;  
+    }
+
+    .homehero {
+        flex-wrap: wrap;
+    }
+
+    .boxuspitem {
+        width: auto;
+        max-width: 60%;
+        min-width: none;
+    }
+
+    .homebox3container {
+        flex-wrap: wrap;
+    }
+
+    .homehero {
+        background-image: url(images/coffeehands5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .homebox3 {
+        background-image: url(images/coffeelatte3.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+    
+
+}
+
+@media only screen and (max-width:450px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxtagline {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .boxusp {
+        text-align: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .logo img {
+        width: clamp(2px, 35vw, 70px);
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        font-family: 'Rethink Sans';
+        font-size: clamp(2px, 3vw, 20px);
+        list-style: none;
+        padding: 4%;
+        gap: clamp(2px, 6vw, 25px);
+    }
+    
+    .navbaritems a {
+        border: 2px solid #b2cce600;
+        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+        border-radius: 20px;
+    }
+
+    .box1 img {
+        max-width: 90%;
+    }
+
+    .boxproductmain {
+        width: auto;
+        height: auto;
+    }
+
+    .boxproducttext1 {
+        margin-top: 10vh;
+        padding: 9% 6% 0% 6%;
+    }
+
+    .boxproducttext1 h1 {
+        font-size: clamp(2px, 12vw, 64px);
+    }
+
+    .boxproducttext1 p {
+        font-size: clamp(2px, 5vw, 64px);
+    }
+
+    .productcontainer {
+        flex-direction: column;
+        padding: 30px 4% 100px 4%;
+        align-items: center;
+    }
+
+    .productcontainer {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 8% 5% 8%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -2%;
+        margin-bottom: 3%;
+    }
+
+    .productcontaineritem {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        background-color: #a0714da7;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px solid #90adc800;
+    }
+
+    .productcontaineritem h1{
+        font-size: clamp(2px, 5vw, 60px);
+        justify-content: flex-start;
+        margin-bottom: 1%;
+        color: #5E361C;
+    }
+
+    
+    .productcontaineritem p {
+        font-size: clamp(2px, 4vw, 40px);
+        font-family: 'Rethink Sans';
+        padding: 10px;
+        color: #ffffff;
+    }
+    
+    .productcontaineritem img {
+        border: 3px solid #a0714d00;
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .productdownloadbutton a {
+        font-size: clamp(2px, 4.5vw, 24px);
+    }
+
+    .abourhero img {
+        object-fit: contain;
+    }
+}
+
+
+@media only screen and (max-width:369px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxtagline {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .boxusp {
+        text-align: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box1 img {
+        max-width: 90%;
+    }
+
+
+}
+
+
+/* responsive product page */
+
+/* .boxproductmain {
+
+    padding: 15px 18% 15px 18%;
+}
+
+.boxproduct {
+
+    background-color: rgb(51, 33, 6);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+} */
+
